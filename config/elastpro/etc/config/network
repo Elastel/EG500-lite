@@ -7,8 +7,8 @@ config interface 'wan'
 
 config interface 'lan'
 	option ifname 'br0'
-	option ip '192.168.1.1'
 	option netmask '255.255.255.0'
+	option ip '192.168.2.70'
 
 config interface 'swan'
 	option proto 'lte'
@@ -17,6 +17,7 @@ config interface 'swan'
 	option ifname 'wwan0'
 	option auth 'none'
 	option metric '300'
+	option apn 'conectividad.telefonicatech.com'
 
 config interface 'wifi'
 	option device 'wlan0'
